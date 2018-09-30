@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:padding="5dp"
+    android:background="@drawable/backgroud_app">
+
+    <ImageView
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center"
+        android:src="@drawable/developer"
+        android:layout_width="128dp"
+        android:layout_height="128dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:textColorHint="#979191"
+        android:id="@+id/tilTenDangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.lbt.batro.tinhtrangthietbi.customView.EditTextCustom
+            android:hint="@string/tendangnhap"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:textColorHint="#979191"
+        android:id="@+id/tilMatKhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.lbt.batro.tinhtrangthietbi.customView.EditTextPasswordCustom
+            android:hint="@string/matkhau"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:userStrike="true"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnDangNhap"
+        android:layout_marginTop="20dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:background="@drawable/background_btndangnhap"
+        android:layout_gravity="center"
+        android:text="@string/dangnhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

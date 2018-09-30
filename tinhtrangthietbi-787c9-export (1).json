@@ -1,0 +1,309 @@
+{
+  "lichsusuachuas" : {
+    "PM01" : {
+      "PM01PC01" : [ {
+        "chitietsuachua" : {
+          "banphim" : true,
+          "chuot" : true,
+          "cpu" : false,
+          "hedieuhanh" : true,
+          "khac" : "",
+          "manhinh" : true,
+          "phanmem" : ""
+        },
+        "dasuachua" : true,
+        "emailnguoibaocao" : "batrong@gmail.com",
+        "idnguoibaocao" : "zoXWG6qddjgOZvCJjC2a2pcJg743",
+        "ngaybaocao" : 1536945972754
+      }, {
+        "chitietsuachua" : {
+          "banphim" : false,
+          "chuot" : false,
+          "cpu" : true,
+          "hedieuhanh" : true,
+          "khac" : "",
+          "manhinh" : true,
+          "phanmem" : ""
+        },
+        "dasuachua" : true,
+        "emailnguoibaocao" : "batrong@gmail.com",
+        "idnguoibaocao" : "zoXWG6qddjgOZvCJjC2a2pcJg743",
+        "ngaybaocao" : 1537193030776
+      }, {
+        "chitietsuachua" : {
+          "banphim" : true,
+          "chuot" : false,
+          "cpu" : true,
+          "hedieuhanh" : true,
+          "khac" : "",
+          "manhinh" : false,
+          "phanmem" : ""
+        },
+        "dasuachua" : true,
+        "emailnguoibaocao" : "a@gmail.com",
+        "idnguoibaocao" : "ylXA5oSOGXfwBjz4MIRktRWZrB22",
+        "ngaybaocao" : 1537623075958
+      } ],
+      "PM01PC02" : [ {
+        "chitietsuachua" : {
+          "banphim" : false,
+          "chuot" : true,
+          "cpu" : true,
+          "hedieuhanh" : true,
+          "khac" : "",
+          "manhinh" : true,
+          "phanmem" : ""
+        },
+        "dasuachua" : true,
+        "emailnguoibaocao" : "batrong@gmail.com",
+        "idnguoibaocao" : "zoXWG6qddjgOZvCJjC2a2pcJg743",
+        "ngaybaocao" : 1537451378231
+      }, {
+        "chitietsuachua" : {
+          "banphim" : true,
+          "chuot" : false,
+          "cpu" : false,
+          "hedieuhanh" : true,
+          "khac" : "",
+          "manhinh" : true,
+          "phanmem" : ""
+        },
+        "dasuachua" : true,
+        "emailnguoibaocao" : "a@gmail.com",
+        "idnguoibaocao" : "ylXA5oSOGXfwBjz4MIRktRWZrB22",
+        "ngaybaocao" : 1537850480834
+      } ],
+      "PM01PC03" : [ {
+        "chitietsuachua" : {
+          "banphim" : true,
+          "chuot" : true,
+          "cpu" : false,
+          "hedieuhanh" : true,
+          "khac" : "",
+          "manhinh" : false,
+          "phanmem" : ""
+        },
+        "dasuachua" : true,
+        "emailnguoibaocao" : "batrong@gmail.com",
+        "idnguoibaocao" : "zoXWG6qddjgOZvCJjC2a2pcJg743",
+        "ngaybaocao" : 1537449989685
+      }, {
+        "chitietsuachua" : {
+          "banphim" : true,
+          "chuot" : true,
+          "cpu" : false,
+          "hedieuhanh" : true,
+          "khac" : "",
+          "manhinh" : true,
+          "phanmem" : ""
+        },
+        "dasuachua" : true,
+        "emailnguoibaocao" : "a@gmail.com",
+        "idnguoibaocao" : "ylXA5oSOGXfwBjz4MIRktRWZrB22",
+        "ngaybaocao" : 1537713133000
+      } ],
+      "PM01PC04" : [ {
+        "chitietsuachua" : {
+          "banphim" : false,
+          "chuot" : true,
+          "cpu" : false,
+          "hedieuhanh" : true,
+          "khac" : "",
+          "manhinh" : true,
+          "phanmem" : ""
+        },
+        "dasuachua" : true,
+        "emailnguoibaocao" : "batrong@gmail.com",
+        "idnguoibaocao" : "zoXWG6qddjgOZvCJjC2a2pcJg743",
+        "ngaybaocao" : 1537463314565
+      } ],
+      "PM01PC06" : [ {
+        "chitietsuachua" : {
+          "banphim" : false,
+          "chuot" : false,
+          "cpu" : false,
+          "hedieuhanh" : false,
+          "khac" : "",
+          "manhinh" : false,
+          "phanmem" : "aaa"
+        },
+        "dasuachua" : true,
+        "emailnguoibaocao" : "a@gmail.com",
+        "idnguoibaocao" : "ylXA5oSOGXfwBjz4MIRktRWZrB22",
+        "ngaybaocao" : 1537713017271
+      }, {
+        "chitietsuachua" : {
+          "banphim" : false,
+          "chuot" : true,
+          "cpu" : false,
+          "hedieuhanh" : true,
+          "khac" : "",
+          "manhinh" : true,
+          "phanmem" : ""
+        },
+        "dasuachua" : true,
+        "emailnguoibaocao" : "a@gmail.com",
+        "idnguoibaocao" : "ylXA5oSOGXfwBjz4MIRktRWZrB22",
+        "ngaybaocao" : 1537716379956
+      } ]
+    },
+    "PM02" : {
+      "PM02PC01" : [ {
+        "chitietsuachua" : {
+          "banphim" : true,
+          "chuot" : false,
+          "cpu" : true,
+          "hedieuhanh" : true,
+          "khac" : "",
+          "manhinh" : true,
+          "phanmem" : ""
+        },
+        "dasuachua" : true,
+        "emailnguoibaocao" : "batrong@gmail.com",
+        "idnguoibaocao" : "zoXWG6qddjgOZvCJjC2a2pcJg743",
+        "ngaybaocao" : 1537446111813
+      }, {
+        "chitietsuachua" : {
+          "banphim" : false,
+          "chuot" : true,
+          "cpu" : false,
+          "hedieuhanh" : true,
+          "khac" : "",
+          "manhinh" : true,
+          "phanmem" : ""
+        },
+        "dasuachua" : false,
+        "emailnguoibaocao" : "batrong@gmail.com",
+        "idnguoibaocao" : "zoXWG6qddjgOZvCJjC2a2pcJg743",
+        "ngaybaocao" : 1537446971434
+      } ],
+      "PM02PC02" : [ {
+        "chitietsuachua" : {
+          "banphim" : true,
+          "chuot" : true,
+          "cpu" : false,
+          "hedieuhanh" : false,
+          "khac" : "",
+          "manhinh" : true,
+          "phanmem" : ""
+        },
+        "dasuachua" : false,
+        "emailnguoibaocao" : "batrong@gmail.com",
+        "idnguoibaocao" : "zoXWG6qddjgOZvCJjC2a2pcJg743",
+        "ngaybaocao" : 1537446384249
+      } ],
+      "PM02PC03" : [ {
+        "chitietsuachua" : {
+          "banphim" : true,
+          "chuot" : true,
+          "cpu" : false,
+          "hedieuhanh" : true,
+          "khac" : "",
+          "manhinh" : true,
+          "phanmem" : ""
+        },
+        "dasuachua" : false,
+        "emailnguoibaocao" : "batrong@gmail.com",
+        "idnguoibaocao" : "zoXWG6qddjgOZvCJjC2a2pcJg743",
+        "ngaybaocao" : 1537448990520
+      } ]
+    },
+    "PM03" : {
+      "PM03PC01" : [ {
+        "chitietsuachua" : {
+          "banphim" : false,
+          "chuot" : false,
+          "cpu" : true,
+          "hedieuhanh" : true,
+          "khac" : "",
+          "manhinh" : true,
+          "phanmem" : ""
+        },
+        "dasuachua" : false,
+        "emailnguoibaocao" : "batrong@gmail.com",
+        "idnguoibaocao" : "zoXWG6qddjgOZvCJjC2a2pcJg743",
+        "ngaybaocao" : 1537454350622
+      } ],
+      "PM03PC02" : [ {
+        "chitietsuachua" : {
+          "banphim" : false,
+          "chuot" : false,
+          "cpu" : true,
+          "hedieuhanh" : true,
+          "khac" : "",
+          "manhinh" : false,
+          "phanmem" : ""
+        },
+        "dasuachua" : false,
+        "emailnguoibaocao" : "a@gmail.com",
+        "idnguoibaocao" : "ylXA5oSOGXfwBjz4MIRktRWZrB22",
+        "ngaybaocao" : 1537623642378
+      } ]
+    }
+  },
+  "nguoidungs" : {
+    "ylXA5oSOGXfwBjz4MIRktRWZrB22" : {
+      "gioitinh" : "Nam",
+      "hinhnen" : "/hinhnen/avatar-1537426879384-zoXWG6qddjgOZvCJjC2a2pcJg743",
+      "hoten" : "Trọng",
+      "ngaysinh" : 85377960000,
+      "quequan" : "Vĩnh Long",
+      "quyen" : 2,
+      "tendangnhap" : "a@gmail.com"
+    },
+    "zoXWG6qddjgOZvCJjC2a2pcJg743" : {
+      "gioitinh" : "Nam",
+      "hinhnen" : "/hinhnen/avatar-1537426879384-zoXWG6qddjgOZvCJjC2a2pcJg743",
+      "hoten" : "Bá Trọng Lê",
+      "ngaysinh" : 853779600000,
+      "quequan" : "Vĩnh Long",
+      "quyen" : 0,
+      "tendangnhap" : "batrong@gmail.com"
+    }
+  },
+  "phanquyens" : [ "Administrator", "Quản lý phòng máy", "Người dùng" ],
+  "phongmays" : [ {
+    "khu" : "A",
+    "lau" : "02",
+    "maphong" : "PM01",
+    "phong" : "05",
+    "quanly" : "zoXWG6qddjgOZvCJjC2a2pcJg743",
+    "tenphong" : "Phòng máy 01"
+  }, {
+    "khu" : "A",
+    "lau" : "02",
+    "maphong" : "PM02",
+    "phong" : "07",
+    "quanly" : "",
+    "tenphong" : "Phòng máy 02"
+  }, {
+    "khu" : "B",
+    "lau" : "11",
+    "maphong" : "PM03",
+    "phong" : "03",
+    "tenphong" : "Phòng máy 3"
+  }, {
+    "khu" : "C",
+    "lau" : "13",
+    "maphong" : "PM04",
+    "phong" : "08",
+    "tenphong" : "Phòng máy 4"
+  }, {
+    "khu" : "C",
+    "lau" : "15",
+    "maphong" : "PM05",
+    "phong" : "22",
+    "tenphong" : "Phòng máy 5"
+  }, {
+    "khu" : "A",
+    "lau" : "05",
+    "maphong" : "PM06",
+    "phong" : "07",
+    "tenphong" : "Phòng máy 6"
+  } ],
+  "thietbis" : {
+    "PM01" : [ "PM01PC01", "PM01PC02", "PM01PC03", "PM01PC04", "PM01PC05", "PM01PC06" ],
+    "PM02" : [ "PM02PC01", "PM02PC02", "PM02PC03", "PM02PC04", "PM02PC05" ],
+    "PM03" : [ "PM03PC01", "PM03PC02", "PM03PC03", "PM03PC04", "PM03PC05", "PM03PC06", "PM03PC07", "PM03PC08", "PM03PC09", "PM03PC10", "PM03PC11" ]
+  }
+}

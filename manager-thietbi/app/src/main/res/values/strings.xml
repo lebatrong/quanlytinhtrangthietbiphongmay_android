@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">SR Manage</string>
+    <string name="notifi">Có thiết bị hỏng!</string>
+    <string name="mangkhongon">Mạng không ổn định!</string>
+    <string name="comayhu">Có máy hư!</string>
+    <string name="thongbaohu">Thiết bị tại phòng máy của bạn đang hư hỏng </string>
+    <string name="dasuaxong">Bạn đã sửa xong thiết bị</string>
+    <string name="dangtaidulieu">Đang tải dữ liệu....</string>
+    <string name="capnhatkhongthanhcong">Cập nhật không thành công!</string>
+    <string name="capnhatthanhcong">Cập nhật thành công!</string>
+    <string name="tendangnhap">Tên đăng nhập</string>
+    <string name="matkhau">Mật khẩu</string>
+    <string name="mamay">Mã máy: </string>
+    <string name="dangnhap">Đăng nhập</string>
+    <string name="dangxuat">Đăng xuất</string>
+    <string name="thongtintaikhoan">Tài khoản</string>
+    <string name="bankhongcoquyen">Bạn không đủ quyền truy cập!</string>
+    <string name="lichsu">Lịch sử</string>
+    <string name="mayhoatdongtot">Máy hoạt động tốt!</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="quetmamay">Quét mã máy</string>
+    <string name="tentaikhoan">Tên tài khoản</string>
+    <string name="ngaysinh">Ngày sinh</string>
+    <string name="gioitinh">Giới tính</string>
+    <string name="nam">Nam</string>
+    <string name="nu">Nữ</string>
+    <string name="quequan">Quê quán</string>
+    <string name="hoten">Họ tên</string>
+    <string name="thongtin">Thông tin</string>
+    <string name="caidat">Cài đặt</string>
+    <string name="phong">Phòng</string>
+    <string name="capnhatthongtinthanhcong">Cập nhật thông tin thành công</string>
+    <string name="capnhatthongtinthatbai">Cập nhật thông thất bại</string>
+    <string name="thietbiphongmay">Thiết bị phòng máy</string>
+    <string name="tendangnhapkhonghople">Tên đăng nhập không hợp lệ</string>
+    <string name="matkhaukhonghople">Mật khẩu không hợp lệ</string>
+    <string name="dangnhapthatbai">Đăng nhập không thành công</string>
+    <string name="tinhtrangthietbi">Tình trạng thiết bị</string>
+    <string name="danghoatdong">Đang hoạt động</string>
+    <string name="baocaotinhtrang">(Báo cáo tình trạng)</string>
+    <string name="chitietphongmay">Chi tiết phòng máy</string>
+    <string name="khonghoatdong">Không hoạt động</string>
+    <string name="manhinh">Màn hình</string>
+    <string name="cpu">CPU</string>
+    <string name="chuot">Chuột</string>
+    <string name="banphim">Bàn phím</string>
+    <string name="thongbao">Thông báo</string>
+    <string name="khac">Khác</string>
+    <string name="tenphanmem">Tên phần mềm</string>
+    <string name="dongy">Đồng ý</string>
+    <string name="huy">Hủy</string>
+    <string name="maydangsuachuamuonxemtinhtrang">"Máy đang trong quá trình sửa chữa, bạn muốn xem chi tiết tình trạng?"</string>
+    <string name="phanmem">Phần mềm</string>
+    <string name="bophankhac">Bộ phận khác</string>
+    <string name="phongmay">Phòng máy</string>
+    <string name="khu">Khu:</string>
+    <string name="lau">Lầu:</string>
+    <string name="sohu">Lỗi:</string>
+    <string name="thietbibinhthuong">Bình thường:</string>
+    <string name="tongthietbi">Tổng thiết bị:</string>
+    <string name="quanly">Quản lý:</string>
+    <string name="ngunghoatdong">Ngừng hoạt động</string>
+    <string name="xemchitiet">(xem chi tiết)</string>
+    <string name="loitaidulieu">Lỗi tải dữ liệu!</string>
+    <string name="khongcolichsu">Không có lịch sử!</string>
+    <string name="phongmaydangxaydung">Không có dữ liệu, phòng máy đang xây dựng!</string>
+    <string name="guibaocao">Gửi báo cáo</string>
+    <string name="xacnhan">Xác nhận</string>
+    <string name="dong">Đóng</string>
+    <string name="ngaybaocao">Ngày báo cáo:</string>
+    <string name="tinhtrangsuachua">Tình trạng:</string>
+    <string name="dasua">Đã sửa</string>
+    <string name="suasau">Sửa sau</string>
+    <string name="hedieuhanh">Hệ điều hành</string>
+    <string name="chuasua">Chưa sửa</string>
+    <string name="khongcothongbao">Không có thông báo!</string>
+    <string name="nguoibaocao">Người báo cáo:</string>
+    <string name="may">Máy</string>
+    <string name="loi">Lỗi</string>
+    <string name="hoatdong">Hoạt động</string>
+    <string name="capnhatthongtin">Cập nhật thông tin</string>
+    <string name="capnhatmatkhau">Cập nhật mật khẩu</string>
+    <string name="thanhcong">Thành công</string>
+    <string name="vi" translatable="false">VI</string>
+    <string name="en" translatable="false">EN</string>
+    <string name="thongtinphanmem">Thông tin phần mềm</string>
+    <string name="chonngonngu">Chọn ngôn ngữ:</string>
+    <string name="maqrkhonghople">Mã QR không hợp lệ</string>
+    <string name="guibaocaothanhcong">Gửi báo cáo thành công, Cảm ơn bạn!</string>
+    <string name="guibaocaokhongthanhcong">Gửi báo cáo không thành công!</string>
+
+
+    <string name="chitiet">Chi tiết</string>
+    <string name="maytinh">máy tính</string>
+    <string name="maytinhctp">Máy tính</string>
+    <string name="thietbikhac">thiết bị khác</string>
+    <string name="ban">Bàn</string>
+    <string name="ghe">Ghế</string>
+    <string name="den">Đèn</string>
+    <string name="tivi">Tivi</string>
+    <string name="dieuhoa">Điều hòa</string>
+    <string name="quat">Quạt</string>
+    <string name="switchmang">Switch mạng</string>
+    <string name="modemwifi">Modem wifi</string>
+    <string name="bandansuaxong">Bạn đã sửa xong?</string>
+
+
+    <string name="tong">Tổng</string>
+    <string name="binhthuong">Bình thường</string>
+
+    <string name="manhinhctp">Màn hình</string>
+    <string name="cpuctp">CPU</string>
+    <string name="chuotctp">Chuột</string>
+    <string name="banphimctp">Bàn phím</string>
+
+    <string name="tongmay">Tổng máy</string>
+
+    <string name="soluong">Số lượng</string>
+
+    <string name="baocaothanhcong">Báo cáo thành công</string>
+    <string name="giatrikhonghople">Giá trị không hợp lệ</string>
+    <string name="dasuaxongtatca">Đã sửa xong tất cả</string>
+
+</resources>

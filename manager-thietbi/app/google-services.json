@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "581724640647",
+    "firebase_url": "https://tinhtrangthietbi-787c9.firebaseio.com",
+    "project_id": "tinhtrangthietbi-787c9",
+    "storage_bucket": "tinhtrangthietbi-787c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581724640647:android:47287fa2abb830a2",
+        "android_client_info": {
+          "package_name": "com.lbt.batro.tinhtrangthietbi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581724640647-kgsqe40nn4l4numrotooqlub1cv591jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtamUg22_l0oiJXDhQQxTqmpcdUfzvDfU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581724640647:android:04940eef379522ad",
+        "android_client_info": {
+          "package_name": "lbt.com.manager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581724640647-kgsqe40nn4l4numrotooqlub1cv591jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtamUg22_l0oiJXDhQQxTqmpcdUfzvDfU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

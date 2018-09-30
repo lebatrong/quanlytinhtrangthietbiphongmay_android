@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaoCaoThietBiKhacActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarbaocaotbk"
+        app:titleTextColor="@color/colorWhite"
+        app:title="@string/tinhtrangthietbi"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:orientation="vertical"
+                android:showDividers="middle"
+                android:dividerPadding="5dp"
+                android:divider="#000"
+                android:stretchColumns="*"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--TITLE-->
+                <TableRow
+                    android:padding="5dp"
+                    android:background="@color/colortitletable">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textSize="18dp"
+                        android:textColor="#000"
+                        android:text="Tên thiết bị"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        android:textColor="@color/colortong"
+                        android:text="Tổng"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorhu"
+                        android:text="@string/daloi"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="@string/them"/>
+
+
+
+                </TableRow>
+
+                <!--BÀN-->
+                <TableRow
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:background="@color/colorRow1"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:textSize="17dp"
+                        android:textColor="#000"
+                        android:text="@string/ban"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!--TỔNG-->
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tvtongban_bc"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/colortong"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <!--HU-->
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tvhuban_bc"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorhu"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <!--LỖI THÊM-->
+                    <EditText
+                        android:hint="0"
+                        android:id="@+id/edtban_bc"
+                        android:textAlignment="center"
+                        android:inputType="numberSigned" />
+
+                </TableRow>
+
+                <!--GHẾ-->
+                <TableRow
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:background="@color/colorRow2"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:textSize="17dp"
+                        android:textColor="#000"
+                        android:text="@string/ghe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!--TỔNG-->
+                    <TextView
+                        android:id="@+id/tvtongghe_bc"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/colortong"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+
+                    <!--HU-->
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tvhughe_bc"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorhu"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+
+                    <!--LỖI THÊM-->
+                    <EditText
+                        android:hint="0"
+                        android:id="@+id/edtghe_bc"
+                        android:textAlignment="center"
+                        android:inputType="numberSigned" />
+
+                </TableRow>
+
+                <!--ĐIỀU HÒA-->
+                <TableRow
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:background="@color/colorRow1"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:textSize="17dp"
+                        android:textColor="#000"
+                        android:text="@string/dieuhoa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!--TỔNG-->
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tvtongdieuhoa_bc"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/colortong"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+
+
+                    <!--HU-->
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tvhudieuhoa_bc"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorhu"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+
+                    <!--LỖI THÊM-->
+                    <EditText
+                        android:id="@+id/edtdieuhoa_bc"
+                        android:textAlignment="center"
+                        android:inputType="numberSigned"
+                        android:hint="0"/>
+
+                </TableRow>
+
+                <!--MODEM WIFI-->
+                <TableRow
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:background="@color/colorRow2"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:textSize="17dp"
+                        android:textColor="#000"
+                        android:text="@string/modemwifi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!--TỔNG-->
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tvtongmodem_bc"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/colortong"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+
+                    <!--HU-->
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tvhumodem_bc"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorhu"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <!--LỖI THÊM-->
+                    <EditText
+                        android:id="@+id/edtmodem_bc"
+                        android:textAlignment="center"
+                        android:inputType="numberSigned"
+                        android:hint="0"/>
+
+                </TableRow>
+
+                <!--QUẠT-->
+                <TableRow
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:background="@color/colorRow1"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:textSize="17dp"
+                        android:textColor="#000"
+                        android:text="@string/quat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!--TỔNG-->
+                    <TextView
+                        android:id="@+id/tvtongquat_bc"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/colortong"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+
+                    <!--HU-->
+                    <TextView
+                        android:id="@+id/tvhuquat_bc"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorhu"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <!--LỖI THÊM-->
+                    <EditText
+                        android:id="@+id/edtquat_bc"
+                        android:textAlignment="center"
+                        android:inputType="numberSigned"
+                        android:hint="0"/>
+
+                </TableRow>
+
+                <!--SWITCH MẠNG-->
+                <TableRow
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:background="@color/colorRow2"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:textSize="17dp"
+                        android:textColor="#000"
+                        android:text="@string/switchmang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!--TỔNG-->
+                    <TextView
+                        android:id="@+id/tvtongswitch_bc"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/colortong"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+
+                    <!--HU-->
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tvhuswitch_bc"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorhu"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+
+                    <!--LỖI THÊM-->
+                    <EditText
+                        android:id="@+id/edtswitch_bc"
+                        android:textAlignment="center"
+                        android:inputType="numberSigned"
+                        android:hint="0"/>
+
+                </TableRow>
+
+                <!--TIVI-->
+                <TableRow
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:background="@color/colorRow1"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:textSize="17dp"
+                        android:textColor="#000"
+                        android:text="@string/tivi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!--TỔNG-->
+                    <TextView
+                        android:id="@+id/tvtongtivi_bc"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/colortong"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+
+
+                    <!--HU-->
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tvhutivi_bc"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorhu"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+
+                    <!--LỖI THÊM-->
+                    <EditText
+                        android:id="@+id/edttivi_bc"
+                        android:textAlignment="center"
+                        android:inputType="numberSigned"
+                        android:hint="0"/>
+
+                </TableRow>
+
+                <!--ĐÈN-->
+                <TableRow
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:background="@color/colorRow2"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:textSize="17dp"
+                        android:textColor="#000"
+                        android:text="@string/den"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!--TỔNG-->
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tvtongden_bc"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/colortong"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+
+                    <!--HU-->
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tvhuden_bc"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorhu"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <!--LỖI THÊM-->
+                    <EditText
+                        android:hint="0"
+                        android:id="@+id/edtden_bc"
+                        android:textAlignment="center"
+                        android:inputType="numberSigned" />
+
+                </TableRow>
+
+            </TableLayout>
+
+
+            <!--KHÁC-->
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:text="@string/khac"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edtkhac_bc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine"/>
+
+            <Button
+                android:id="@+id/btnGuiBaoCao_cb"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:text="@string/guibaocao"
+                android:background="@drawable/custom_button_baocaothietbikhac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

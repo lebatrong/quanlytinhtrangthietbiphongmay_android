@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChitietphongmayActivity"
+    android:background="@color/colorbackground">
+
+    <android.support.v7.widget.Toolbar
+        app:title="@string/chitietphongmay"
+        android:id="@+id/toolbarchitietphongmay"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+    </android.support.v7.widget.Toolbar>
+
+    <!--PROGRESSBAR-->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lnlproctp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardviewMain_ctp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--TEXTVIEW MÁY TÍNH-->
+                <TextView
+                    android:id="@+id/tvtitlemaytinh_ctp"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:text="@string/maytinh"
+                    android:textColor="#fff"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/background_title"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!--LAYOUT MÁY TÍNH THỐNG KÊ-->
+                <LinearLayout
+                    android:id="@+id/lnlmaytinhthongke_ctp"
+                    android:visibility="visible"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:orientation="vertical"
+                        android:showDividers="middle"
+                        android:dividerPadding="5dp"
+                        android:divider="#000"
+                        android:stretchColumns="*"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!--TITLE-->
+                        <TableRow
+                            android:padding="5dp"
+                            android:background="@color/colortitletable">
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="18dp"
+                                android:textColor="#000"
+                                android:text="Tên thiết bị"/>
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="18dp"
+                                android:gravity="center"
+                                android:textColor="@color/colortong"
+                                android:text="Tổng"/>
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="18dp"
+                                android:gravity="center"
+                                android:textColor="@color/colorbinhthuong"
+                                android:text="@string/hoatdong"/>
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="18dp"
+                                android:gravity="center"
+                                android:textColor="@color/colorhu"
+                                android:text="@string/loi"/>
+
+                        </TableRow>
+
+                        <!--MÁY TÍNH-->
+                        <TableRow
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/colorRow1"
+                            >
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:textSize="17dp"
+                                android:textColor="#000"
+                                android:text="@string/maytinhctp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <!--TỔNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvtongmaytinh_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colortong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+
+                            <!--BÌNH THƯỜNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvbinhthuongmaytinh_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorbinhthuong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+                            <!--Lỗi-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvhumaytinh_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorhu"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                        </TableRow>
+
+                        <!--MÀN HÌNH-->
+                        <TableRow
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/colorRow2"
+                            >
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:textSize="17dp"
+                                android:textColor="#000"
+                                android:text="@string/manhinhctp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <!--TỔNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvtongmanhinh_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colortong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+
+                            <!--BÌNH THƯỜNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvbinhthuongmanhinh_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorbinhthuong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+
+                            <!--Lỗi-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvhumanhinh_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorhu"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                        </TableRow>
+
+                        <!--CHUỘT-->
+                        <TableRow
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/colorRow1"
+                            >
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:textSize="17dp"
+                                android:textColor="#000"
+                                android:text="@string/chuotctp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <!--TỔNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvtongchuot_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colortong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+
+                            <!--BÌNH THƯỜNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvbinhthuongchuot_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorbinhthuong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+                            <!--HƯ-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvhuchuot_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorhu"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                        </TableRow>
+
+                        <!--BÀN PHÍM-->
+                        <TableRow
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/colorRow2"
+                            >
+
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:textSize="17dp"
+                                android:textColor="#000"
+                                android:text="@string/banphimctp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <!--TỔNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvtongbanphim_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colortong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+                            <!--BÌNH THƯỜNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvbinhthuongbanphim_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorbinhthuong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+                            <!--HU-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvhubanphim_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorhu"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                        </TableRow>
+
+                        <!--CPU-->
+                        <TableRow
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/colorRow1"
+                            >
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:textSize="17dp"
+                                android:textColor="#000"
+                                android:text="@string/cpuctp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <!--TỔNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvtongcpu_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colortong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+
+                            <!--BÌNH THƯỜNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvbinhthuongcpu_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorbinhthuong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+                            <!--HU-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvhucpu_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorhu"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                    <Button
+                        android:id="@+id/btnchitietmaytinh_ctp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/chitiet"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/custom_button_chitietmay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+                <!--THIẾT BỊ KHÁC-->
+                <TextView
+                    android:id="@+id/tvtitlethietbikhac_ctp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:text="@string/thietbikhac"
+                    android:textColor="#fff"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/background_title"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <!--LAYOUT THIẾT BỊ KHÁC THỐNG KÊ-->
+                <LinearLayout
+                    android:id="@+id/lnlthietbikhacthongke_ctp"
+                    android:visibility="visible"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:orientation="vertical"
+                        android:showDividers="middle"
+                        android:dividerPadding="5dp"
+                        android:divider="#000"
+                        android:stretchColumns="*"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!--TITLE-->
+                        <TableRow
+                            android:padding="5dp"
+                            android:background="@color/colortitletable">
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="18dp"
+                                android:textColor="#000"
+                                android:text="Tên thiết bị"/>
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="18dp"
+                                android:gravity="center"
+                                android:textColor="@color/colortong"
+                                android:text="Tổng"/>
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="18dp"
+                                android:gravity="center"
+                                android:textColor="@color/colorbinhthuong"
+                                android:text="@string/hoatdong"/>
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="18dp"
+                                android:gravity="center"
+                                android:textColor="@color/colorhu"
+                                android:text="@string/loi"/>
+
+                        </TableRow>
+
+                        <!--BÀN-->
+                        <TableRow
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/colorRow1"
+                            >
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:textSize="17dp"
+                                android:textColor="#000"
+                                android:text="@string/ban"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <!--TỔNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvtongban_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colortong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                            <!--BÌNH THƯỜNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvbinhthuongban_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorbinhthuong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                            <!--HƯ-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvhuban_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorhu"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                        </TableRow>
+
+                        <!--GHẾ-->
+                        <TableRow
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/colorRow2"
+                            >
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:textSize="17dp"
+                                android:textColor="#000"
+                                android:text="@string/ghe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <!--TỔNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvtongghe_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colortong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+                            <!--BÌNH THƯỜNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvbinhthuongghe_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorbinhthuong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+                            <!--LỖI-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvhughe_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorhu"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                        </TableRow>
+
+                        <!--ĐIỀU HÒA-->
+                        <TableRow
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/colorRow1"
+                            >
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:textSize="17dp"
+                                android:textColor="#000"
+                                android:text="@string/dieuhoa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <!--TỔNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvtongdieuhoa_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colortong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+
+                            <!--BÌNH THƯỜNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvbinhthuongdieuhoa_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorbinhthuong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+                            <!--HƯ-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvhudieuhoa_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorhu"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                        </TableRow>
+
+                        <!--MODEM WIFI-->
+                        <TableRow
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/colorRow2"
+                            >
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:textSize="17dp"
+                                android:textColor="#000"
+                                android:text="@string/modemwifi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <!--TỔNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvtongmodemwifi_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colortong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+                            <!--BÌNH THƯỜNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvbinhthuongmodemwifi_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorbinhthuong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                            <!--HU-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvhumodemwifi_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorhu"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                        </TableRow>
+
+                        <!--QUẠT-->
+                        <TableRow
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/colorRow1"
+                            >
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:textSize="17dp"
+                                android:textColor="#000"
+                                android:text="@string/quat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <!--TỔNG-->
+                            <TextView
+                                android:id="@+id/tvtongquat_ctp"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colortong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+                            <!--BÌNH THƯỜNG-->
+                            <TextView
+                                android:id="@+id/tvbinhthuongquat_ctp"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorbinhthuong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                            <!--HU-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvhuquat_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorhu"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                        </TableRow>
+
+                        <!--SWITCH MẠNG-->
+                        <TableRow
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/colorRow2"
+                            >
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:textSize="17dp"
+                                android:textColor="#000"
+                                android:text="@string/switchmang"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <!--TỔNG-->
+                            <TextView
+                                android:id="@+id/tvtongswitchmang_ctp"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colortong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+                            <!--BÌNH THƯỜNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvbinhthuongswitchmang_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorbinhthuong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+                            <!--HU-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvhuswitchmang_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorhu"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                        </TableRow>
+
+                        <!--TIVI-->
+                        <TableRow
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/colorRow1"
+                            >
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:textSize="17dp"
+                                android:textColor="#000"
+                                android:text="@string/tivi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <!--TỔNG-->
+                            <TextView
+                                android:id="@+id/tvtongtivi_ctp"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colortong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+
+                            <!--BÌNH THƯỜNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvbinhthuongtivi_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorbinhthuong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+                            <!--HU-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvhutivi_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorhu"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                        </TableRow>
+
+                        <!--ĐÈN-->
+                        <TableRow
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/colorRow2"
+                            >
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:textSize="17dp"
+                                android:textColor="#000"
+                                android:text="@string/den"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <!--TỔNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvtongden_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colortong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+
+                            <!--BÌNH THƯỜNG-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvbinhthuongden_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorbinhthuong"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                            <!--HU-->
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tvhuden_ctp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorhu"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+
+                    <!--KHÁC-->
+                    <LinearLayout
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="#000"
+                            android:text="@string/khac"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                        <EditText
+                            android:inputType="textMultiLine"
+                            android:id="@+id/edtKhac_ctp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnguibaocaotbk_ctp"
+                        android:textSize="18dp"
+                        android:textColor="#fff"
+                        android:text="@string/guibaocao"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/custom_button_baocaothietbikhac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>
